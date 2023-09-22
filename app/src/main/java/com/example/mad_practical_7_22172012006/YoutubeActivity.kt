@@ -9,11 +9,11 @@ class YoutubeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_youtube)
 
-      val webSettings: WebSettings = YoutubeWebviwe.settings
+      val webSettings: WebSettings = youtubeWebviw.settings
         webSettings.javaScriptEnabled = true
         webSettings.loadWithOverviewMode = true
         webSettings.useWideViewPort = true
-        YoutubeWebview.loadurl()
+        YoutubeWebview.loadurl("")
 
 
     }
