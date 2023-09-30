@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
             val mediaController = MediaController(this)
             val uri: Uri = Uri.parse("android.resource://" + packageName + "/" + R.raw.thestoryoflight)
-            val myVideoview:VideoView = findViewById<VideoView>(R.id.videoView)
+            val myVideoview:VideoView = findViewById<VideoView>(R.id.myVideoView)
             mediaController.setAnchorView(myVideoview)
             myVideoview.setVideoURI(uri)
             myVideoview.requestFocus()
